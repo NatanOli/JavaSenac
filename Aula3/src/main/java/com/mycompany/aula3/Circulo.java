@@ -8,18 +8,18 @@ package com.mycompany.aula3;
  *
  * @author Aluno
  */
-public class Circulo extends Forma{
-    this.Circulo = areaCirculo;
-    
-    private int area;
-    private int raio;
-    
-    int areaCirculo = (raio * area);
-    
-    raio = 13,65; 
-    
-    
-    
-}
-   
+public class Circulo extends Forma {
 
+    public double raio;
+
+    public Circulo(double raio) {
+        this.raio = area;
+    }
+
+    @Override
+    public void calcularArea() {
+        this.area = Math.PI * Math.pow(raio, 2);
+
+    }
+
+}

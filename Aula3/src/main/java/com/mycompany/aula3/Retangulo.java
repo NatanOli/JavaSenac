@@ -8,6 +8,18 @@ package com.mycompany.aula3;
  *
  * @author Aluno
  */
-public class Retangulo {
-    
+public class Retangulo extends Forma {
+
+    public int comprimento;
+    public int altura;
+
+    public Retangulo(int comprimento, int altura) {
+        this.comprimento = comprimento;
+        this.altura = altura;
+    }
+
+    @Override
+    public void calcularArea() {
+        this.area = comprimento * altura;
+    }
 }

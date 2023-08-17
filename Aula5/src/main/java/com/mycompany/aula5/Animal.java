@@ -8,16 +8,27 @@ package com.mycompany.aula5;
  *
  * @author Aluno
  */
-    //Classe abstract vai ser apenas de modelos para as classes FILHAS, já que ANIMAL é genérico.
-public abstract class Animal {
+//Classe abstract vai ser apenas de modelos para as classes FILHAS, já que ANIMAL é genérico.
+public class Animal {
+
     //atributo
-    public String NOME;         
-    public int IDADE;           
+    public String nome;
+    public int idade;
     public String ALIMENTACAO;
     
-    //metodo -todos metodos na classe mãe vai ser necessário nas filhas.
-    public abstract void interagir();
-    public abstract String getNOME();
+    public Animal(String nome,int idade){
+        this.nome = nome;
+        this.idade = idade;
+        
+    }
     
-   
-}
+
+    //metodo -todos metodos na classe mãe vai ser necessário nas filhas.
+    public void interagir() {
+    }
+    public String getNOME(){
+        return null;
+    }
+    
+   }
+

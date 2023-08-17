@@ -8,10 +8,16 @@ package com.mycompany.aula3;
  *
  * @author Aluno
  */
-public abstract class Forma {
+public class Quadrado extends Forma {
 
-    public double area;
+    public int lado;
 
-    public abstract void calcularArea();
+    public Quadrado(int lado) {
+        this.lado = lado;
+    }
 
+    @Override
+    public void calcularArea() {
+        this.area = lado * lado;
+    }
 }

@@ -1,7 +1,6 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  */
-
 package com.mycompany.aula3;
 
 /**
@@ -11,8 +10,18 @@ package com.mycompany.aula3;
 public class Aula3 {
 
     public static void main(String[] args) {
-        
-    System.out.println ("A area do Circulo é: " + areaCirculo);
-    System.out.println ("A area do Retangulo é: " + areaRetangulo);
+        Circulo circulo = new Circulo(13.65);
+        circulo.calcularArea();
+
+        Retangulo retangulo = new Retangulo(10, 5);
+        retangulo.calcularArea();
+
+        Quadrado quadrado = new Quadrado(15);
+        quadrado.calcularArea();
+
+        System.out.println("A area do Circulo é: " + circulo.area);
+        System.out.println("A area do Retangulo é: " + retangulo.area);
+        System.out.println("A area do Quadrado é: " + quadrado.area);
+
     }
 }

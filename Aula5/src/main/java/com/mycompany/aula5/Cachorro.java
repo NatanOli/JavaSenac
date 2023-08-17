@@ -9,10 +9,15 @@ package com.mycompany.aula5;
  * @author Aluno
  */
 public class Cachorro extends Animal{
+
+    public Cachorro(String nome, int idade) {
+        super(nome, idade);
+    }
     //atributos - os atributos foram isolados dentro da Class Animal
     //public String NOME;         
     //public int IDADE;           
     //public String ALIMENTACAO;  
+
     
     //métodos - comportamentos que vão realizar
     @Override
@@ -22,6 +27,6 @@ public class Cachorro extends Animal{
 
     @Override
     public String getNOME() {
-       return this.NOME;
+       return this.nome;
     }
 }
