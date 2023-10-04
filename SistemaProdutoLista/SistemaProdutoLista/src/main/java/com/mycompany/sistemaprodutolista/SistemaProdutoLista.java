@@ -4,6 +4,8 @@
 
 package com.mycompany.sistemaprodutolista;
 
+import java.util.List;
+
 /**
  *
  * @author Aluno
@@ -33,7 +35,7 @@ public class SistemaProdutoLista {
         produtoBuscado.exibirInformacoes();
         
         nota.adicionarProduto(new Televisao("Televisao Sony", 2700, 100));
-        nota.adicionarProduto(new Computador("Computador Dell", 6200, 90));;
+        nota.adicionarProduto(new Computador("Computador Dell", 6200, 90));
         
         System.out.println("\n-- Produtos ordenados por nome --");
         List<Produto> produtosOrdenadosPorNome = nota.getProdutosOrdenadosPorNome();

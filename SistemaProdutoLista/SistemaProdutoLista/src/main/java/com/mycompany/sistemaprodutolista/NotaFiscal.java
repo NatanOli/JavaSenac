@@ -5,6 +5,8 @@
 package com.mycompany.sistemaprodutolista;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 /**
@@ -68,9 +70,18 @@ public class NotaFiscal {
                 return true;
             }
         }
-            return false;
+        return false;
+//        return this.produtos.stream().anyMatch(produtos -> produtos.getNome().equals(nome));
     }
-    public 
-}
-        
 
+    public List<Produto> getProdutosOrdenadosPorNome() {
+        Comparator<Produto> comparator = (obj1, obj2) -> obj1.getNome().compareTo(obj2.getNome());
+                Collections.sort(produtos,comparator);
+                return this.produtos;
+    }
+    public List<Produto> getProdutosOrdenadosPorPreco(){
+       Comparator<Produto> comparator = (obj1, obj2) -> obj1.getPreco().compareTo(obj2.getPreco());
+                Collections.sort(produtos,comparator);
+                return this.produtos; 
+    }
+}
