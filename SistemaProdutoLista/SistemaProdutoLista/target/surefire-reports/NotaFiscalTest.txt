@@ -1,0 +1,9 @@
+-------------------------------------------------------------------------------
+Test set: NotaFiscalTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.056 s <<< FAILURE! - in NotaFiscalTest
+quandoValidoCalcularValorTotal_DeveRetornarSucesso  Time elapsed: 0.042 s  <<< ERROR!
+java.lang.UnsupportedOperationException: Not supported yet.
+	at NotaFiscalTest.calcularValorTotal(NotaFiscalTest.java:30)
+	at NotaFiscalTest.quandoValidoCalcularValorTotal_DeveRetornarSucesso(NotaFiscalTest.java:23)
+
